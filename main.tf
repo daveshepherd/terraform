@@ -36,3 +36,9 @@ resource "fakewebservices_database" "prod_db" {
   name = "Production DB"
   size = 256
 }
+
+
+resource aws_vpc "fff" {
+
+  cidr_block = "10.99.0.0/16"
+}

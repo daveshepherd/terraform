@@ -11,3 +11,9 @@ variable "provider_token" {
 provider "fakewebservices" {
   token = var.provider_token
 }
+
+
+provider "aws" {
+  profile = "endor"
+  region  = "eu-west-1"
+}
